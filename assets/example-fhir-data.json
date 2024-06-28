@@ -1,0 +1,1860 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-glucose",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Glucose [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001032",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "preferredReportName": "Glucose",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mg/dL",
+                "display": "milligrams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 65,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 99,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 65,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 99,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-bun",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3094-0",
+              "display": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001040",
+              "display": "Glucose"
+            }
+          ]
+        },
+        "preferredReportName": "Blood Urea Nitrogen (BUN)",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mg/dL",
+                "display": "milligrams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 40,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 20,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 40,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 60,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 24,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 60,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 90,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 27,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 90,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 10,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 36,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 40,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 20,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 40,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 60,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 24,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 60,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 90,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 27,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 90,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 10,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 36,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-creatinine",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001370",
+              "display": "Creatinine"
+            }
+          ]
+        },
+        "preferredReportName": "Creatinine",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mg/dL",
+                "display": "milligrams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0.8,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 1.3,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0.6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 1.0,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-bun-creatinine-ratio",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3097-3",
+              "display": "Urea nitrogen/Creatinine [Mass Ratio] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "011577",
+              "display": "BUN/Creatinine Ratio"
+            }
+          ]
+        },
+        "preferredReportName": "BUN/Creatinine Ratio",
+        "quantitativeDetails": {
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 9.0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 20.0,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 9.0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 23.0,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-sodium",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2951-2",
+              "display": "Sodium [Moles/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001198",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "preferredReportName": "Sodium",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mmol/L",
+                "display": "millimoles per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 134.0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 144.0,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 134.0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 144.0,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-potassium",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium [Moles/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001180",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "preferredReportName": "Potassium",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mmol/L",
+                "display": "millimoles per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 3.5,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 5.2,
+                "unit": "mmol/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 3.5,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 5.2,
+                "unit": "mmol/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-chloride",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2075-0",
+              "display": "Chloride [Moles/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001206",
+              "display": "Chloride"
+            }
+          ]
+        },
+        "preferredReportName": "Chloride",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mmol/L",
+                "display": "millimoles per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 96,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 106,
+                "unit": "mmol/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 96,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 106,
+                "unit": "mmol/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-carbon-dioxide-total",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2028-9",
+              "display": "Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001578",
+              "display": "Carbon Dioxide, Total"
+            }
+          ]
+        },
+        "preferredReportName": "Carbon Dioxide, Total",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mmol/L",
+                "display": "millimoles per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 20,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 29,
+                "unit": "mmol/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 20,
+                "unit": "mmol/L"
+              },
+              "high": {
+                "value": 29,
+                "unit": "mmol/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-calcium",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "17861-6",
+              "display": "Calcium [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001016",
+              "display": "Calcium"
+            }
+          ]
+        },
+        "preferredReportName": "Calcium",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mg/dL",
+                "display": "milligrams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 59,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8.7,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 10.2,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 59,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8.6,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 10.2,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "<",
+                "value": 59,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8.7,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 10.2,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 59,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8.7,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 10.3,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-protein-total",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2885-2",
+              "display": "Protein [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001073",
+              "display": "Protein, Total"
+            }
+          ]
+        },
+        "preferredReportName": "Protein, Total",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "g/dL",
+                "display": "grams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 8.5,
+                "unit": "g/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 6,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 8.5,
+                "unit": "g/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-albumin",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1751-7",
+              "display": "Albumin [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001081",
+              "display": "Albumin"
+            }
+          ]
+        },
+        "preferredReportName": "Albumin",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "g/dL",
+                "display": "grams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 4.1,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 5.2,
+                "unit": "g/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 3.9,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 5.0,
+                "unit": "g/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-globulin-total",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10834-0",
+              "display": "Globulin [Mass/volume] in Serum by calculation"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "012039",
+              "display": "Globulin, Total"
+            }
+          ]
+        },
+        "preferredReportName": "Globulin, Total",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "g/dL",
+                "display": "grams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 1.5,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 4.5,
+                "unit": "g/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 1.5,
+                "unit": "g/dL"
+              },
+              "high": {
+                "value": 4.5,
+                "unit": "g/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-ag-ratio",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1759-0",
+              "display": "Albumin/Globulin [Mass Ratio] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "012047",
+              "display": "A/G Ratio"
+            }
+          ]
+        },
+        "preferredReportName": "Globulin A/G Ratio",
+        "quantitativeDetails": {
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 1.2
+              },
+              "high": {
+                "value": 2.2
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 1.2
+              },
+              "high": {
+                "value": 2.2
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-bilirubin-total",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1975-2",
+              "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001099",
+              "display": "Bilirubin, Total"
+            }
+          ]
+        },
+        "preferredReportName": "Bilirubin, Total",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mg/dL",
+                "display": "milligrams per deciliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 1.2,
+                "unit": "mg/dL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0,
+                "unit": "mg/dL"
+              },
+              "high": {
+                "value": 1.2,
+                "unit": "mg/dL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-alp",
+        "code": {
+          "coding": [
+            {
+              "system": "http://labcorp.com",
+              "code": "001107",
+              "display": "Alkaline Phosphate"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "6768-6",
+              "display": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "preferredReportName": "Alkaline Phosphatase (ALP)",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "IU/L",
+                "display": "international units per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": "=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "=",
+                "value": 20,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 51,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 125,
+                "unit": "IU/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">",
+                "value": 20,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 44,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 121,
+                "unit": "IU/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": "=",
+                "value": 18,
+                "unit": "year"
+              },
+              "high": {
+                "comparator": "=",
+                "value": 20,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 42,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 106,
+                "unit": "IU/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">",
+                "value": 20,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 44,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 121,
+                "unit": "IU/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-ast",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1920-8",
+              "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001123",
+              "display": "AST (SGOT)"
+            }
+          ]
+        },
+        "preferredReportName": "Aspartate Aminotransferase (AST)",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "IU/L",
+                "display": "international units per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0.0,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 40,
+                "unit": "IU/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 0.0,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 40,
+                "unit": "IU/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-alt",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1742-6",
+              "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001545",
+              "display": "ALT (SGPT)"
+            }
+          ]
+        },
+        "preferredReportName": "Alanine Aminotransferase (ALT)",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "IU/L",
+                "display": "international units per liter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 8.0,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 44.0,
+                "unit": "IU/L"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 5,
+                "unit": "IU/L"
+              },
+              "high": {
+                "value": 32,
+                "unit": "IU/L"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-egfr",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "98979-8",
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "100779",
+              "display": "eGFR"
+            }
+          ]
+        },
+        "preferredReportName": "Estimated Glomerular Filtration Rate (eGFR)",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "mL/min/1.72",
+                "display": "milliter per minute per 1.72"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 59.0,
+                "unit": "mL/min/1.72"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 59.0,
+                "unit": "mL/min/1.72"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ObservationDefinition",
+        "id": "observation-blood-vitamin-b12",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2132-9",
+              "display": "Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma"
+            },
+            {
+              "system": "http://labcorp.com",
+              "code": "001503",
+              "display": "Vitamin B12"
+            }
+          ]
+        },
+        "preferredReportName": "Vitamin B12",
+        "quantitativeDetails": {
+          "unit": {
+            "coding": [
+              {
+                "system": "http://ucum.org",
+                "code": "pg/mL",
+                "display": "picograms per milliliter"
+              }
+            ]
+          },
+          "decimalPrecision": 2
+        },
+        "qualifiedInterval": [
+          {
+            "condition": "Optimal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 532,
+                "unit": "pg/mL"
+              },
+              "high": {
+                "value": 1245,
+                "unit": "pg/mL"
+              }
+            }
+          },
+          {
+            "condition": "Normal",
+            "gender": "male",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 232,
+                "unit": "pg/mL"
+              },
+              "high": {
+                "value": 1245,
+                "unit": "pg/mL"
+              }
+            }
+          },
+          {
+            "condition": "Optimal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 532,
+                "unit": "pg/mL"
+              },
+              "high": {
+                "value": 1245,
+                "unit": "pg/mL"
+              }
+            }
+          },
+          {
+            "condition": "Normal",
+            "gender": "female",
+            "age": {
+              "low": {
+                "comparator": ">=",
+                "value": 18,
+                "unit": "year"
+              }
+            },
+            "range": {
+              "low": {
+                "value": 232,
+                "unit": "pg/mL"
+              },
+              "high": {
+                "value": 1245,
+                "unit": "pg/mL"
+              }
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ObservationDefinition"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "superpower",
+            "value": "310946254456"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1990-01-01",
+        "id": "9495b8e0-fe8d-4a14-b438-b4863cdd94b4",
+        "meta": {
+          "versionId": "f37a9a8e-5830-4b31-a9f1-46470c622e72",
+          "lastUpdated": "2024-06-28T17:41:57.162Z",
+          "author": {
+            "reference": "Practitioner/32d5eb5a-bc0d-4529-9050-a857970f5dcc",
+            "display": "Medplum Admin"
+          },
+          "project": "7f9f8ebd-4e46-44aa-8435-943fcfe39c0b",
+          "compartment": [
+            {
+              "reference": "Project/7f9f8ebd-4e46-44aa-8435-943fcfe39c0b"
+            },
+            {
+              "reference": "Patient/9495b8e0-fe8d-4a14-b438-b4863cdd94b4"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    }
+  ]
